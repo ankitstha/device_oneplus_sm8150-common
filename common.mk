@@ -46,6 +46,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Features
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/com.samsung.feature.samsung_experience_am.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.samsung.feature.samsung_experience_am.xml
+    
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
