@@ -38,9 +38,13 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-derp
+    $(LOCAL_PATH)/overlay-blaze
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+#RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
