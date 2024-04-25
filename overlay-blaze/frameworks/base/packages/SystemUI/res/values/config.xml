@@ -1,6 +1,5 @@
 <!--
-     Copyright (C) 2015-2019 AOSiP
-
+     Copyright (C) 2015-2019 Lineage
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -17,7 +16,17 @@
     <!-- Allow devices override audio panel location to the left side -->
     <bool name="config_audioPanelOnLeftSide">true</bool>
 
-    <!-- Burn-in protection -->
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+    
+    <!-- Doze: does the double tap sensor need a proximity check? -->
+    <bool name="doze_double_tap_proximity_check">true</bool>
+
+    <!-- Doze: does the long press sensor need a proximity check? -->
+    <bool name="doze_long_press_proximity_check">true</bool>
+
+        <!-- Burn-in protection -->
     <bool name="config_statusBarBurnInProtection">true</bool>
     <integer name="config_shift_interval">40</integer>
 
