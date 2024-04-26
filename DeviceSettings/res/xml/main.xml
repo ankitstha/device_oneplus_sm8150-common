@@ -25,34 +25,14 @@
         android:title="@string/hbm_mode_title"
         android:defaultValue="false" />
 
-    <SwitchPreferenceCompat
-        android:key="fps_info"
-        android:title="@string/fps_info_title"
-        android:summary="@string/fps_info_summary"
-        android:persistent="true" />
-
-    <SwitchPreferenceCompat
-        android:key="refresh_rate"
-        android:summary="@string/refresh_rate_summary"
-        android:title="@string/refresh_rate_title"
-        android:persistent="false" />
-
-    <ListPreference
-        android:key="reading_mode"
-        android:summary="@string/reading_mode_summary"
-        android:title="@string/reading_mode_title"
-        android:entries="@array/reading_mode_entries"
-        android:entryValues="@array/reading_mode_values"
-        android:defaultValue="0" />
-
     <Preference
-        android:key="touchscreen_gesture_category"
-        android:title="@string/touchscreen_gesture_settings_title"
-        android:summary="@string/touchscreen_gesture_settings_summary"
+        android:key="perapp_refreshrate"
+        android:title="@string/refresh_title"
+        android:summary="@string/refresh_summary"
         android:persistent="false" >
         <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="org.lineageos.device.DeviceSettings"
-                android:targetClass="org.lineageos.device.DeviceSettings.TouchscreenGestureSettings" />
+                android:targetPackage="org.aosp.device.DeviceSettings"
+                android:targetClass="org.aosp.device.DeviceSettings.RefreshRate.RefreshActivity" />
     </Preference>
 
     <PreferenceCategory
@@ -89,20 +69,22 @@
             android:summary="@string/slider_mute_media_summary"
             android:defaultValue="false"
             android:persistent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="touchpanel"
+        android:title="@string/touchpanel_title">
 
         <SwitchPreferenceCompat
-            android:key="slider_dialog_enabled"
-            android:title="@string/slider_dialog_enabled_title"
-            android:summary="@string/slider_dialog_enabled_summary"
-            android:defaultValue="true"
-            android:persistent="false" />
+            android:key="edge_touch"
+            android:summary="@string/edge_touch_summary"
+            android:title="@string/edge_touch_title" />
 
-        <SwitchPreferenceCompat
-            android:key="slider_doze_enabled"
-            android:title="@string/slider_doze_enabled_title"
-            android:summary="@string/slider_doze_enabled_summary"
-            android:defaultValue="true"
-            android:persistent="false" />
+        <Preference
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/edge_touch_warning"
+            android:persistent="false"
+            android:selectable="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
