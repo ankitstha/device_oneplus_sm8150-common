@@ -261,6 +261,34 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Dolby
+system/lib64/vendor.dolby.hardware.dms@2.0.so
+odm/bin/hw/vendor.dolby.hardware.dms@2.0-service
+odm/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+odm/lib/libdapparamstorage.so
+odm/lib/libdeccfg.so
+odm/lib/libqtigef.so
+odm/lib/libstagefright_soft_ac4dec.so
+odm/lib/libstagefright_soft_ddpdec.so
+odm/lib/libstagefrightdolby.so
+odm/lib/soundfx/libeffectproxy.so
+odm/lib/soundfx/libhwdap.so
+odm/lib/soundfx/libswdap.so
+odm/lib/soundfx/libswgamedap.so
+odm/lib/vendor.dolby.hardware.dms@2.0.so
+odm/lib64/libdapparamstorage.so
+odm/lib64/libdeccfg.so
+odm/lib64/libdlbdsservice.so
+odm/lib64/libstagefright_soft_ac4dec.so
+odm/lib64/libstagefright_soft_ddpdec.so
+odm/lib64/libstagefrightdolby.so
+odm/lib64/soundfx/libeffectproxy.so
+odm/lib64/soundfx/libhwdap.so
+odm/lib64/soundfx/libswdap.so
+odm/lib64/soundfx/libswgamedap.so
+odm/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+odm/lib64/vendor.dolby.hardware.dms@2.0.so
+
 # DPM (system) - from LA.QSSI.12.0.r1-05800.02-qssi.0
 system/framework/tcmclient.jar|60fc12be7581c89cbdc3a5ba0526b423af492baa
 system_ext/bin/dpmd|b11102e06c7e169b3da762a0db408cb8e16d7b01
