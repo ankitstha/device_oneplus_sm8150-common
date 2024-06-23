@@ -48,6 +48,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.samsung.feature.samsung_experience_am.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.samsung.feature.samsung_experience_am.xml
     
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
