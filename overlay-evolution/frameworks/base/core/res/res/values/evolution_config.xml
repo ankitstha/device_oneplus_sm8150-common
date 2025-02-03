@@ -37,6 +37,9 @@
     <!-- PowerOffAlarmService -->
     <bool name="config_powerOffAlarmEnabled">true</bool>
 
+     <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
     <!-- Display color inversion availability -->
     <bool name="config_displayInversionAvailable">true</bool>
 
