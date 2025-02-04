@@ -17,6 +17,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
